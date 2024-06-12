@@ -1,0 +1,20 @@
+.game-frame {
+    background-color: black;
+    width: 100%;
+    height: calc(100vh - 60px);
+    max-width: 900px;
+    max-height: 600px;
+}
+
+.webgl {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .game-wrap {
+        grid-template-columns: 100%;
+    }
+  }

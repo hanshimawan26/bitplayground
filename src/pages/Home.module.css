@@ -1,0 +1,69 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    top: 80px;
+    font-family: Linotte;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.category h2 {
+    margin-bottom: 0.5rem;
+    font-family: HoneyCrepes;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 0.5rem;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+}
+
+.category li {
+    margin-bottom: 5px;
+    margin: 1rem;
+}
+
+.category a {
+    text-decoration: none;
+    color: #333;
+}
+
+.app-button {
+    display: grid;
+    grid-template-rows: 8rem 2rem;
+    grid-template-columns: 8rem;
+}
+
+.app-name {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: Linotte;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}

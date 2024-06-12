@@ -1,0 +1,52 @@
+/* src/components/NavBar.css */
+.nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1rem;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+    height: 60px;
+    background: rgb(56, 56, 224);
+    background: linear-gradient(45deg, rgb(56, 56, 224) 0%, rgb(28, 75, 163) 100%);
+    z-index: 100;
+}
+
+.title {
+    margin: 0;
+    font-family: JungleAdventurer;
+    color: #00b89f;
+}
+
+.logo {
+    height: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    color: #ffbd59;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
