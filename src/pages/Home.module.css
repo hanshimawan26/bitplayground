@@ -2,8 +2,42 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    top: 80px;
+    top: 60px;
     font-family: Linotte;
+    background-image: linear-gradient(180deg, rgba(9,111,161,0.5) 0%, rgba(108,177,186,0.8) 100%), url('assets/space.svg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filters {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 60px;
+    z-index: 1000;
+    color: white;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.select {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 3px 10px;
+    border-radius: 25px;
+    background-color: #BAC3FF;
+}
+
+.select option {
+    font-family: sans-serif;
+    font-size: 18px;
 }
 
 .category {
@@ -12,13 +46,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: calc(100vh - 80px);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1rem;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .category h2 {
@@ -49,9 +81,11 @@
 }
 
 .app-button {
-    display: grid;
-    grid-template-rows: 8rem 2rem;
-    grid-template-columns: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    gap: 10px;
 }
 
 .app-name {
@@ -64,6 +98,7 @@
 }
 
 .icon {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
 }

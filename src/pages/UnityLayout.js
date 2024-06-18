@@ -28,7 +28,6 @@ const styles ={
       minHeight: 'calc(100vh - 60px)',
       width: '100%',
       margin: '0',
-      top: '60px',
       position: 'absolute',
       color: 'white',
       display: 'flex',

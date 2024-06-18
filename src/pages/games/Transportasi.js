@@ -26,7 +26,7 @@ const questions = [
     correctAnswer: 'Truk',
   },
   {
-    image: 'https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960',
+    image: 'https://images.tokopedia.net/img/JFrBQq/2022/6/28/ec400009-559c-4440-8ddf-0674762d7a6b.jpg',
     question: 'Kendaraan pribadi yang dapat membawa beberapa orang sekaligus. Cocok untuk bepergian jarak dekat dan membawa barang bawaan.',
     correctAnswer: 'Mobil',
   },

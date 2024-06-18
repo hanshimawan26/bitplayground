@@ -37,7 +37,7 @@ function SpotItGame() {
   };
 
   return (
-    <div style={styles.container} className='beach'>
+    <div style={styles.container}>
       <div style={styles.content}>
         <div style={styles.gameGrid}>
           {gameIcons.map((icon, index) => (
@@ -96,7 +96,9 @@ const styles = {
     flexDirection: 'column',
     gap: '1rem',
     padding: '0 1rem',
-    height: '100%'
+    height: '100%',
+    minHeight: 'calc(100vh - 60px)',
+    backgroundColor: '#E4F0C9',
   },
   content: {
     display: 'flex',
@@ -105,7 +107,7 @@ const styles = {
     textAlign: 'center',
     flexDirection: 'column',
     height: '100%',
-    backgroundColor: '#0055ff',
+    backgroundColor: '#0055FF',
     color: '#FFBD59',
     borderRadius: '1rem',
     margin: '1rem 0',
@@ -114,6 +116,7 @@ const styles = {
   info: {
     fontSize: '2rem',
     marginTop: '1rem',
+    display: 'none',
   },
   gameGrid: {
     display: 'grid',
@@ -121,14 +124,14 @@ const styles = {
     gridGap: '10px',
   },
   gameCell: {
-    backgroundColor: '#FFBD59',
+    backgroundColor: '#FFF7CF',
     color: '#0055ff',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     height: '100px',
     width: '100px',
-    border: '1px solid #FFBD59',
+    border: '1px solid #FFF7CF',
     borderRadius: '10px',
     cursor: 'pointer',
     transition: 'background-color 0.2s, border-color 0.2s, transform 0.1s',
