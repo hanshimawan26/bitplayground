@@ -12,6 +12,10 @@ import HewanSekitar from './pages/games/Quiz/Hewan Sekitar';
 import HewanTernak from './pages/games/Quiz/Hewan Ternak';
 import HewanLiar from './pages/games/Quiz/Hewan Liar';
 import Maze from './pages/games/Maze';
+import Pertambahan from './pages/games/Mathgame/Pertambahan';
+import Pengurangan from './pages/games/Mathgame/Pengurangan';
+import Perkalian from './pages/games/Mathgame/Perkalian';
+import Pembagian from './pages/games/Mathgame/Pembagian';
 
 function App() {
     return (
@@ -28,6 +32,10 @@ function App() {
                     <Route path="hewan-ternak" element={<HewanTernak name="Hewan Ternak" />} />
                     <Route path="hewan-liar" element={<HewanLiar name="Hewan Liar" />} />
                     <Route path="maze" element={<Maze name="Maze" />} />
+                    <Route path="pertambahan" element={<Pertambahan name="Pertambahan" />} />
+                    <Route path="pengurangan" element={<Pengurangan name="Pengurangan" />} />
+                    <Route path="perkalian" element={<Perkalian name="Perkalian" />} />
+                    <Route path="pembagian" element={<Pembagian name="Pembagian" />} />
                     {/* Add more game routes here */}
                 </Route>
             </Routes>

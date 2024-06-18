@@ -46,6 +46,7 @@
   height: 100%;
   color: white;
   border: 3px solid #C7E0FF;
+  transition: border-color 0.3s;
 }
 
 .questionContainer {

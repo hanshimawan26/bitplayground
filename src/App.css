@@ -6,38 +6,8 @@
 html {
   font-size: 20px;
 }
-.beach {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("./pages/assets/beach.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.sea {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("./pages/assets/sea.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.arctic {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("./pages/assets/arctic.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.safari {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("./pages/assets/safari.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.carnival {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("./pages/assets/carnival.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.forest {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("./pages/assets/forest.svg");
+.space {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("./pages/assets/space.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

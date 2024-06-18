@@ -1,4 +1,8 @@
 const gamesList = [
+    { name: 'Pertambahan', path: '/game/Pertambahan', category: 'Matematika', type: 'game', level: 'Fase A', subject: 'Games for Learning', icon: 'images/pertambahan.png' },
+    { name: 'Pengurangan', path: '/game/Pengurangan', category: 'Matematika', type: 'game', level: 'Fase A', subject: 'Games for Learning', icon: 'images/pengurangan.png' },
+    { name: 'Perkalian', path: '/game/Perkalian', category: 'Matematika', type: 'game', level: 'Fase A', subject: 'Games for Learning', icon: 'images/perkalian.png' },
+    { name: 'Pembagian', path: '/game/Pembagian', category: 'Matematika', type: 'game', level: 'Fase A', subject: 'Games for Learning', icon: 'images/pembagian.png' },
     { name: 'Transportasi', path: '/game/transportasi', category: 'Bahasa Indonesia', type: 'game', level: 'Fase A', subject: 'Games for Learning', icon: 'images/transportasi.svg' },
     { name: 'Anggota Tubuh', path: '/game/anggota-tubuh', category: 'Ilmu Pengetahuan Alam', type: 'game', level: 'Fase A', subject: 'Games for Learning', icon: 'images/anggota-tubuh.png' },
     { name: 'Bagian Tumbuhan', path: '/game/bagian-tumbuhan', category: 'Ilmu Pengetahuan Alam', type: 'game', level: 'Fase A', subject: 'Games for Learning', icon: 'images/bagian-tumbuhan.svg' },
