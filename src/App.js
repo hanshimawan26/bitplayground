@@ -5,12 +5,12 @@ import Layout from './pages/Layout';
 import NavBar from './components/NavBar';
 import './App.css';
 import SpotItGame from './pages/games/spotit/SpotItGame';
-import Transportasi from './pages/games/Transportasi';
-import AnggotaTubuh from './pages/games/Anggota Tubuh';
-import BagianTumbuhan from './pages/games/Bagian Tumbuhan';
-import HewanSekitar from './pages/games/Hewan Sekitar';
-import HewanTernak from './pages/games/Hewan Ternak';
-import HewanLiar from './pages/games/Hewan Liar';
+import Transportasi from './pages/games/Quiz/Transportasi';
+import AnggotaTubuh from './pages/games/Quiz/Anggota Tubuh';
+import BagianTumbuhan from './pages/games/Quiz/Bagian Tumbuhan';
+import HewanSekitar from './pages/games/Quiz/Hewan Sekitar';
+import HewanTernak from './pages/games/Quiz/Hewan Ternak';
+import HewanLiar from './pages/games/Quiz/Hewan Liar';
 import Maze from './pages/games/Maze';
 
 function App() {
