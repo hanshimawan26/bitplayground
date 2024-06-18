@@ -3,9 +3,9 @@
   flex-direction: row;
   align-items: center;
   transition: background-color 0.3s;
-  padding: 1rem;
+  padding: 0 1rem 1rem;
   color: white;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 120px);
   background-color: #C7E0FF;
 }
 

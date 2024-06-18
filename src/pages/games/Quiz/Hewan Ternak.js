@@ -1,5 +1,5 @@
 import React from 'react';
-import QuizTemplate from './QuizTemplate/QuizTemplate';
+import StudyTemplate from './StudyTemplate/StudyTemplate';
 
 const options = [
   'Sapi',
@@ -64,7 +64,7 @@ const questions = [
 
 const HewanTernak = () => {
   return (
-    <QuizTemplate questions={questions} options={options} />
+    <StudyTemplate questions={questions} options={options} />
   );
 };
 

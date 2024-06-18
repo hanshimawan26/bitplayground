@@ -6,7 +6,7 @@ const shuffleArray = (array) => {
   return array.sort(() => Math.random() - 0.5);
 };
 
-const GameTemplate = ({ questions, options, onBackToHome }) => {
+const GameTemplate = ({ questions, options }) => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [shuffledOptions, setShuffledOptions] = useState([]);
   const [result, setResult] = useState('');

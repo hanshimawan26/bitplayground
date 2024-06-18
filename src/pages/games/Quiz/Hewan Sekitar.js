@@ -1,5 +1,5 @@
 import React from 'react';
-import QuizTemplate from './QuizTemplate/QuizTemplate';
+import StudyTemplate from './StudyTemplate/StudyTemplate';
 
 const options = [
   'Anjing',
@@ -69,7 +69,7 @@ const questions = [
 
 const HewanSekitar = () => {
   return (
-    <QuizTemplate questions={questions} options={options} />
+    <StudyTemplate questions={questions} options={options} />
   );
 };
 
