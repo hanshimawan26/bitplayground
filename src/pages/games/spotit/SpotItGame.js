@@ -98,7 +98,7 @@ const styles = {
     padding: '0 1rem',
     height: '100%',
     minHeight: 'calc(100vh - 60px)',
-    backgroundColor: '#E4F0C9',
+    backgroundColor: '#CFCFFF',
   },
   content: {
     display: 'flex',
@@ -107,7 +107,7 @@ const styles = {
     textAlign: 'center',
     flexDirection: 'column',
     height: '100%',
-    backgroundColor: '#0055FF',
+    backgroundColor: '#E4F0C9',
     color: '#FFBD59',
     borderRadius: '1rem',
     margin: '1rem 0',
@@ -124,7 +124,7 @@ const styles = {
     gridGap: '10px',
   },
   gameCell: {
-    backgroundColor: '#FFF7CF',
+    backgroundColor: '#C7E0FF',
     color: '#0055ff',
     display: 'flex',
     justifyContent: 'center',
