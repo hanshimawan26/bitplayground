@@ -4,7 +4,7 @@ import gamesList from '../gamesList';
 import styles from './Home.module.css';
 
 const Home = () => {
-    const [filter, setFilter] = useState({ level: '', type: '', subject: '' });
+    const [filter, setFilter] = useState({ fase: '', type: '', subject: '' });
 
     const handleFilterChange = (event) => {
         const { name, value } = event.target;
@@ -14,9 +14,9 @@ const Home = () => {
         }));
     };
 
-    // Filter and group games by subject and level
+    // Filter and group games by subject and fase
     const filteredGames = gamesList.filter(game =>
-        (filter.level === '' || game.level === filter.level) &&
+        (filter.fase === '' || game.fase === filter.fase) &&
         (filter.type === '' || game.type === filter.type) &&
         (filter.subject === '' || game.subject === filter.subject)
     );
@@ -33,15 +33,15 @@ const Home = () => {
         <div className={styles.home}>
             <div className={styles.filters}>
                 <label className={styles.label}>
-                    Level:
-                    <select name="level" value={filter.level} onChange={handleFilterChange} className={styles.select}>
+                    Fase:
+                    <select name="fase" value={filter.fase} onChange={handleFilterChange} className={styles.select}>
                         <option value="">All</option>
-                        <option value="Fase A">Fase A</option>
-                        <option value="Fase B">Fase B</option>
-                        <option value="Fase C">Fase C</option>
-                        <option value="Fase D">Fase D</option>
-                        <option value="Fase E">Fase E</option>
-                        <option value="Fase F">Fase F</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
                     </select>
                 </label>
                 <label className={styles.label}>

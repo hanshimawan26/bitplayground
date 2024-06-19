@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import styles from './QuizTemplate.module.css';
 import { NavLink } from 'react-router-dom';
 
+// Import sound files
+import dingSound from './ding.mp3';
+import wrongSound from './wrong.mp3';
+
 const shuffleArray = (array) => {
   return array.sort(() => Math.random() - 0.5);
 };
@@ -13,6 +17,9 @@ const GameTemplate = ({ questions, options }) => {
   const [bgColor, setBgColor] = useState('');
   const [askedQuestions, setAskedQuestions] = useState([]);
   const [showButtons, setShowButtons] = useState(false);
+
+  const correctSound = new Audio(dingSound);
+  const wrongSoundEffect = new Audio(wrongSound);
 
   useEffect(() => {
     loadNewQuestion();
@@ -43,12 +50,14 @@ const GameTemplate = ({ questions, options }) => {
 
   const handleOptionClick = (option) => {
     if (option === currentQuestion.correctAnswer) {
-      setBgColor('lime');
+      setBgColor('#E4F0C9');
       setResult('Betul!');
+      correctSound.play();
       setTimeout(loadNewQuestion, 1000);
     } else {
-      setBgColor('red');
+      setBgColor('#FFD3C9');
       setResult('Coba lagi!');
+      wrongSoundEffect.play();
       setTimeout(() => setBgColor(''), 1000);
     }
   };
@@ -64,13 +73,13 @@ const GameTemplate = ({ questions, options }) => {
   const optionColors = ['#E4F0C9', '#FFF7CF', '#FFD3C9', '#BAC3FF']; // Add more colors if needed
 
   return (
-    <div className={styles.gameContainer}>
+    <div className={styles.gameContainer} style={{ backgroundColor: bgColor }}>
       {currentQuestion && (
         <>
           <div className={styles.imageContainer}>
             <img src={currentQuestion.image} alt="Question" />
           </div>
-          <div className={styles.questionOptionContainer} style={{ borderColor: bgColor }}>
+          <div className={styles.questionOptionContainer}>
             <div className={styles.questionContainer}>
               <h2>{currentQuestion.question}</h2>
             </div>

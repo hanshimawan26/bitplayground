@@ -80,8 +80,10 @@
 
 
 .resultContainer {
-  height: 1rem;
+  height: 3rem;
   margin: 5px 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .buttonContainer {

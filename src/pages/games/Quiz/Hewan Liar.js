@@ -16,53 +16,53 @@ const options = [
 
 const questions = [
   {
-    image: 'https://cdn.siasat.com/wp-content/uploads/2023/04/Poonch-8-660x495.png',
-    question: 'Hewan karnivora yang memiliki belang di tubuhnya dan dikenal sebagai raja hutan.',
+    image: '/images/gameassets/Hewan Liar/Harimau.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Harimau',
   },
   {
-    image: 'https://i.natgeofe.com/k/e7ba8001-23ac-457f-aedb-abd5f2fdda62/moms5_4x3.png',
-    question: 'Hewan besar dengan belalai panjang yang hidup di hutan dan savana.',
+    image: '/images/gameassets/Hewan Liar/Gajah.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Gajah',
   },
   {
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Komodo_dragon_with_tongue.jpg',
-    question: 'Kadal raksasa yang hanya ditemukan di beberapa pulau di Indonesia seperti Komodo dan Rinca.',
+    image: '/images/gameassets/Hewan Liar/Komodo.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Komodo',
   },
   {
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Orang_Utan%2C_Semenggok_Forest_Reserve%2C_Sarawak%2C_Borneo%2C_Malaysia.JPG/800px-Orang_Utan%2C_Semenggok_Forest_Reserve%2C_Sarawak%2C_Borneo%2C_Malaysia.JPG',
-    question: 'Kera besar yang hidup di hutan Kalimantan dan Sumatra, dikenal karena kecerdasannya.',
+    image: '/images/gameassets/Hewan Liar/Orangutan.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Orangutan',
   },
   {
-    image: 'https://upload.wikimedia.org/wikipedia/commons/0/02/White_Rhino_at_Working_with_Wildlife.jpg',
-    question: 'Hewan besar yang memiliki cula di hidungnya dan hidup di hutan-hutan.',
+    image: '/images/gameassets/Hewan Liar/Badak.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Badak',
   },
   {
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nagarhole_Kabini_Karnataka_India%2C_Leopard_September_2013.jpg/800px-Nagarhole_Kabini_Karnataka_India%2C_Leopard_September_2013.jpg',
-    question: 'Hewan karnivora dengan bintik-bintik di tubuhnya yang hidup di hutan Asia.',
+    image: '/images/gameassets/Hewan Liar/Macan Tutul.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Macan Tutul',
   },
   {
-    image: 'https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1600673417/isidauparfs32gaobgtk.jpg',
-    question: 'Hewan besar yang mirip sapi namun liar dan hidup di hutan-hutan Asia Tenggara.',
+    image: '/images/gameassets/Hewan Liar/Banteng.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Banteng',
   },
   {
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/White-tailed_deer.jpg/640px-White-tailed_deer.jpg',
-    question: 'Hewan herbivora dengan tanduk yang bercabang, sering ditemukan di hutan-hutan Indonesia.',
+    image: '/images/gameassets/Hewan Liar/Rusa.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Rusa',
   },
   {
-    image: 'https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p2/134/2023/09/17/17-Sep-2023-Akurat-Kaltim-Beruang-Madu-3933820725.png',
-    question: 'Jenis beruang terkecil yang ditemukan di hutan-hutan Asia Tenggara dan dikenal karena lidahnya yang panjang.',
+    image: '/images/gameassets/Hewan Liar/Beruang Madu.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Beruang Madu',
   },
   {
-    image: 'https://news.tamansafari.com/Newsportalv22ok/upload/423_3_elangjawa.jpg',
-    question: 'Burung pemangsa yang endemik di Pulau Jawa dan menjadi simbol negara Indonesia.',
+    image: '/images/gameassets/Hewan Liar/Elang Jawa.jpg',
+    question: 'Hewan ini disebut ...',
     correctAnswer: 'Elang Jawa',
   },
 ];
