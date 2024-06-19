@@ -1,4 +1,11 @@
-export {}; // This line makes the file an ES module
+/* eslint-disable no-restricted-globals */
+
+// This service worker can be customized!
+// See https://developers.google.com/web/tools/workbox/modules
+// for the list of available Workbox modules, or add any other
+// code you'd like.
+// You can also remove this file if you'd prefer not to use a
+// service worker, and the Workbox build step will be skipped.
 
 import { clientsClaim } from 'workbox-core';
 import { ExpirationPlugin } from 'workbox-expiration';
@@ -39,18 +46,22 @@ registerRoute(
   createHandlerBoundToURL(process.env.PUBLIC_URL + '/index.html')
 );
 
-// Update runtime caching for various file types
+// An example runtime caching route for requests that aren't handled by the
+// precache, in this case same-origin .png requests like those from in public/
 registerRoute(
-  ({ url }) => 
-    url.origin === self.location.origin &&
-    (url.pathname.endsWith('.png') || 
-     url.pathname.endsWith('.jpg') ||
-     url.pathname.endsWith('.svg') ||
-     url.pathname.endsWith('.mp3')),
+  // Add in any other file extensions or routing criteria as needed.
+  ({ url }) => url.origin === self.location.origin && 
+  (url.pathname.endsWith('.png') || 
+  url.pathname.endsWith('.jpg') ||
+  url.pathname.endsWith('.svg') ||
+  url.pathname.endsWith('.mp3')),
+   // Customize this strategy as needed, e.g., by changing to CacheFirst.
   new StaleWhileRevalidate({
-    cacheName: 'assets',
+    cacheName: 'images',
     plugins: [
-      new ExpirationPlugin({ maxEntries: 200 }), // Adjust the maxEntries as needed
+      // Ensure that once this runtime cache reaches a maximum size the
+      // least-recently used images are removed.
+      new ExpirationPlugin({ maxEntries: 100 }),
     ],
   })
 );
