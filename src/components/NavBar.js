@@ -11,17 +11,44 @@ const NavBar = () => {
             <img src={logoImg} alt='BIT Playground Logo' className={styles['logo']} />
             <ul className={styles['nav-list']}>
                 <li className={styles['nav-item']}>
-                    <NavLink to="/" className={({ isActive }) => isActive ? `${styles['nav-link']} ${styles.active}` : styles['nav-link']} end>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive
+                                ? `${styles['nav-link']} ${styles.active}`
+                                : styles['nav-link']
+                        }
+                        end
+                    >
                         <FontAwesomeIcon icon={faHome} className={styles.icon} />
                     </NavLink>
                 </li>
                 <li className={styles['nav-item']}>
-                    <NavLink to="/" className={({ isActive }) => isActive ? `${styles['nav-link']} ${styles.active}` : styles['nav-link']} end>
+                    <NavLink
+                        to="/profile"
+                        className={({ isActive }) =>
+                            isActive
+                                ? `${styles['nav-link']} ${styles.active}`
+                                : styles['nav-link']
+                        }
+                    >
                         <FontAwesomeIcon icon={faUser} className={styles.icon} />
                     </NavLink>
                 </li>
-                {/* Add more navigation items here */}
             </ul>
+            {/* New button with the provided image */}
+            <a
+                href="https://bit4change.com" // Replace with the actual BIT4CHANGE website URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles['nav-button']}
+            >
+                <img
+                    src="https://bit4change.com/B4C%20LOGO%20GREEN%20BLACK.svg"
+                    alt="BIT4CHANGE Logo"
+                    className={styles['nav-image']}
+                />
+            </a>
         </nav>
     );
 };

@@ -50,3 +50,18 @@
     margin-right: 8px;
     font-size: 20px;
 }
+
+.nav-button {
+    display: inline-block;
+    margin-left: auto; /* Push to the right */
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-image {
+    height: 40px; /* Adjust size as needed */
+    width: auto;
+}
